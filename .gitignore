@@ -26,6 +26,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+data_config.py
+pytest_testconfig.py
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -98,8 +100,8 @@ __pypackages__/
 celerybeat-schedule
 celerybeat.pid
 
-# SageMath parsed files
-*.sage.py
+#allure
+allure_dir/
 
 # Environments
 .env
@@ -110,20 +112,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
 
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
+# Ignore dynaconf secret files
+.secrets.*
